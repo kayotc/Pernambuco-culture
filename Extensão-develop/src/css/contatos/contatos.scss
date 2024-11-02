@@ -1,0 +1,261 @@
+$header-border-color: #fff;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 140vh;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    display: flex;
+    height: 7em;
+    width: 100%;
+    align-items: center;
+    .nav-bar{
+        display: flex;
+        width: 100%;
+        height: 4em;
+        align-items: center;
+        justify-content: center;  
+        font-size: 18px;
+        a{
+            text-decoration: none;    
+            border-right: 2px solid $header-border-color;
+            padding-right: 0.5em;
+            margin-right: .5em;
+            transition: 1s;
+            color: white;
+        }a:hover{
+            font-size: 20px;
+
+            text-shadow: white 1px 1px 10px;
+            padding-right: 1em;
+        }
+
+        .nav-items{
+            display: inline-flex;
+            width: 90%;
+            padding: 0 1em 0.4em 1em;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(128, 128, 128, 0);
+            border-bottom: 2px solid $header-border-color;
+
+            .own-info-container{
+                display: inline-flex;
+                background-color: rgba(0, 0, 255, 0);
+                
+                align-items: center;
+                justify-content: space-between;
+
+                
+                h1{
+                    
+                    font-size: 20px;
+
+                    color: #fff;
+                }
+            }
+            .events-container{
+                display: flex;
+                justify-content: space-between;
+                background-color: rgba(0, 255, 255, 0);
+                
+            }
+        }
+    }
+}
+
+
+.main{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    
+    background-repeat: no-repeat;
+    background-image: url(https://www.infoescola.com/wp-content/uploads/2008/11/sertao_641523103.jpg);
+    background-position: center;
+    background-size: cover;
+
+    .background-filter{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        opacity: 0.3;
+        background: black;
+
+    }
+    .page-content{
+        z-index: 101;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .page-items{
+            width: 100%;
+            height: 110vh;
+            display: flex;
+           
+        
+
+            .contact{
+                display: flex;
+                width: 100%;
+                height: 120vh;
+                flex-direction: column;
+                align-items: center;
+                
+
+                .perfil-card{
+                    
+                    width: 100%;
+                    height: 50%;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    justify-content: space-around;
+                    
+                    a {
+                        height: 20em;
+                        width: 15em;
+                        text-decoration: none;
+                        color: white;
+                    
+                        .start{
+                           
+                            display: flex;
+                            position: relative;
+                            background-color: #404040;
+                            justify-content: center;
+                            width: 100%;
+                            height: 80%;
+                            justify-content: space-around;
+                            border-radius: 3em 3em 0em 0em;
+
+                            .describe{
+                                display: flex;
+                                font-size: 15px;
+                                padding: 1em 1em 0 1em;
+
+                                section{
+                                    height: 100%;
+                                    position: relative;
+
+                                    .photo{
+                                        width: 4em;
+                                        aspect-ratio: 1;
+                                        margin-right: 1em;
+                                        flex-shrink: 0;
+                                        float: left;
+                                        border: solid 1px rgb(175, 174, 174);
+                                        border-radius: 100%;
+                                        background-size: cover;
+                                        
+
+                                       &.antonio{
+                                        background-image: url(../../assets-pessoal/antonio.jpeg);
+                                        background-position: center;
+                                       }
+                                        
+                                        &.kayo{
+                                            background-image: url(../../assets-pessoal/kayo.jpg);
+                                        }
+
+                                        &.dario {
+                                            background-image: url(../../assets-pessoal/dario.jpg);
+                                        }
+
+                                        &.lucas{
+                                            background-image: url(../../assets-pessoal/lucas.jpeg);
+                                        }
+                                        
+                                        &.roberto{
+                                            background-image: url(../../assets-pessoal/roberto.jpeg);
+                                        }
+
+                                        &.yuki{
+                                            background-image: url(../../assets-pessoal/yuki.jpeg);
+                                        }
+
+
+    
+                                    }
+
+                                    h1{
+                                        font-size: 20px;
+                                        margin-bottom: 1em;
+                                    }
+
+                                    p{  
+                                        text-align: start;
+                                        font-size: 17px;
+                                        margin-top: 5px;
+                                    }
+
+                                }
+                            
+                            }
+                        }
+
+                        .end{
+                            display: flex;
+                            width: 100%;
+                            height: 20%;
+                            background-color: #202020;
+                            align-items: center;
+                            justify-content: space-around;
+                            border-radius: 0 0 3em 3em;
+                            flex-direction: column;
+                            p{  
+                                text-align: start;
+                                font-size: 12px;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    
+
+    .nav-items{
+
+        .own-info-container{
+
+            h1{
+                margin-left: 0;
+            }
+            
+            .link-nassau{
+                display: none;
+                margin-left: 0;
+                
+            }
+        }
+        
+        .events-container{
+            
+        }
+    }
+
+
+}

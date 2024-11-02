@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: green;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  display: flex;
+  height: 7em;
+  width: 100%;
+  align-items: center;
+}
+header .nav-bar {
+  display: flex;
+  width: 100%;
+  height: 4em;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+header .nav-bar a {
+  text-decoration: none;
+  border-right: 2px solid #fff;
+  padding-right: 0.5em;
+  transition: 1s;
+  color: white;
+}
+header .nav-bar a:hover {
+  font-size: 20px;
+  text-shadow: white 1px 1px 10px;
+  padding-right: 1em;
+}
+header .nav-bar .nav-items {
+  display: inline-flex;
+  width: 90%;
+  padding: 0 1em 0.4em 1em;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0);
+  border-bottom: 2px solid #fff;
+}
+header .nav-bar .nav-items .own-info-container {
+  display: inline-flex;
+  background-color: rgba(0, 0, 255, 0);
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav-bar .nav-items .own-info-container h1 {
+  margin-left: 0.8em;
+  width: 5em;
+  font-size: 1.1em;
+  align-items: center;
+  color: #fff;
+}
+header .nav-bar .nav-items .events-container {
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+  background-color: rgba(0, 255, 255, 0);
+}
+
+.main {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-image: url(https://www.cartacapital.com.br/wp-content/uploads/2022/02/frevo-by-andrearegobarros.jpg);
+  background-size: cover;
+}
+.main .background-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background: black;
+}
+.main .page-content {
+  z-index: 101;
+  width: 100%;
+}
+
+/*# sourceMappingURL=events.css.map */
